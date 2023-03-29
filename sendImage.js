@@ -8,7 +8,7 @@ async function updateImage(filePath) {
     let formData = new FormData();
     formData.append('event_img', fileContent);
     
-    const response = await axios.patch('url_que_retorna_objeto_com_imagem', formData, {
+    const response = await axios.patch('url_que_recebe_objeto_com_imagem', formData, {
     headers: {
       "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
       },
